@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>MathCanvasAgent Demo</h3>
+<input id="expr" type="text" value="1.23 * 4.6" style="width:200px">
+<button id="solveBtn">Solve</button>
+<canvas id="c" width="400" height="300" style="border:1px solid #000;"></canvas>
+
+<script>
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+
+    function drawScene(scene) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // clear previous
+        scene.commands.forEach(cmd => {
+            if (cmd.type === 'text') {
+                ctx.font = "20px monospace";
+                ctx.fillText(cmd.text, cmd.x, cmd.y);
+            }
+            // You can add more cmd types here if needed (lines, rectangles, etc.)
+        });
+    }
+
+    document.getElementById('solveBtn').addEventListener('click', () => {
+        const expr = encodeURIComponent(document.getElementById('expr').value);
+        fetch(`http://localhost:5199/scene?expr=${expr}`)
+            .then(r => r.json())
+            .then(scene => drawScene(scene))
+            .catch(err => console.error(err));
+    });
+
+    // Optional: draw initial scene
+    fetch(`http://localhost:5000/scene/solve?expr=${encodeURIComponent('1.23 * 4.6')}`)
+        .then(r => r.json())
+        .then(scene => drawScene(scene));
+</script>
+</body>
+</html>
