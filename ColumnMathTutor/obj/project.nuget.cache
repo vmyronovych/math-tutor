@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kO3Xm1X3rhk=",
+  "success": true,
+  "projectFilePath": "/Users/vmyronovych/projects/math-tutor-backup/ColumnMathTutor/ColumnMathTutor.csproj",
+  "expectedPackageFiles": [
+    "/Users/vmyronovych/.nuget/packages/fluentassertions/8.9.0/fluentassertions.8.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

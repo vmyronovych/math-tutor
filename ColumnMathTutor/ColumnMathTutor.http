@@ -1,0 +1,6 @@
+@ColumnMathTutor_HostAddress = http://localhost:5173
+
+GET {{ColumnMathTutor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

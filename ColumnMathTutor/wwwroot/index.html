@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Math Tutor</title>
+    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .input-section {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        input {
+            padding: 12px 20px;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #4a90d9;
+        }
+        button {
+            padding: 12px 30px;
+            font-size: 18px;
+            background: #4a90d9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #357abd;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .info {
+            text-align: center;
+            color: #666;
+            margin-top: 10px;
+        }
+        .step-info {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .step-info h3 {
+            color: #4a90d9;
+            margin-bottom: 10px;
+        }
+        .error {
+            color: #d94a4a;
+            text-align: center;
+            padding: 15px;
+            background: #ffe6e6;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Column Method Math Tutor</h1>
+        <div class="input-section">
+            <input type="text" id="expression" placeholder="e.g., 12 * 34" value="12 * 34">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <div id="container"></div>
+        <div id="step-info" class="step-info" style="display: none;">
+            <h3>Current Step</h3>
+            <p id="step-explanation"></p>
+        </div>
+        <div id="result-info" class="info"></div>
+        <div id="error" class="error" style="display: none;"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

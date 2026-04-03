@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "FSpfFirKU2yGEKwACAzfcAP5QTaL/vcifRKTrOyd+a4=",
+  "Source": "ColumnMathTutor",
+  "BasePath": "_content/ColumnMathTutor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ColumnMathTutor/wwwroot",
+      "Source": "ColumnMathTutor",
+      "ContentRoot": "/Users/vmyronovych/projects/math-tutor-backup/ColumnMathTutor/wwwroot/",
+      "BasePath": "_content/ColumnMathTutor",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/vmyronovych/projects/math-tutor-backup/ColumnMathTutor/wwwroot/app.js",
+      "SourceId": "ColumnMathTutor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/vmyronovych/projects/math-tutor-backup/ColumnMathTutor/wwwroot/",
+      "BasePath": "_content/ColumnMathTutor",
+      "RelativePath": "app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.js"
+    },
+    {
+      "Identity": "/Users/vmyronovych/projects/math-tutor-backup/ColumnMathTutor/wwwroot/index.html",
+      "SourceId": "ColumnMathTutor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/vmyronovych/projects/math-tutor-backup/ColumnMathTutor/wwwroot/",
+      "BasePath": "_content/ColumnMathTutor",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}
