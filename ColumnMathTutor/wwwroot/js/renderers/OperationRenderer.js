@@ -43,13 +43,6 @@ export class OperationRenderer {
             );
         }
 
-        this.canvas.drawText(
-            this.canvas.layer,
-            startX + (maxDigits - right.digitCount) * this.canvas.cellSize,
-            topY + this.canvas.cellSize - (this.canvas.cellSize/2),
-            opSymbol
-        );
-
         for (let i = 0; i < right.digitCount; i++) {
             const col = maxDigits - right.digitCount + 1 + i;
             this.canvas.drawDigit(
@@ -59,6 +52,13 @@ export class OperationRenderer {
                 right.digits[i]
             );
         }
+
+        this.canvas.drawText(
+            this.canvas.layer,
+            startX,
+            topY + this.canvas.cellSize - (this.canvas.cellSize/2),
+            opSymbol
+        );
     }
 
     renderOperationsLine(operation) {
